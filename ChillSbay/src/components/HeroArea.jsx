@@ -3,13 +3,13 @@ import { Autocomplete, AutocompleteItem, Button } from "@nextui-org/react";
 
 function HeroArea() {
   return (
-    <section className='bg-[url("../hero.png")] w-full h-[700px] bg-no-repeat bg-contain mt-4 overflow-hidden'>
+    <section className='bg-[url("../hero.png")] w-full  bg-no-repeat bg-cover h-[80vh] mt-4 overflow-hidden'>
       <div className="container w-[80%] mx-auto">
-        <h1 className="text-5xl w-[60%] font-bold p-10  mt-[30px] text-white leading-tight">
+        <h1 className="text-2xl lg:text-5xl w-full lg:w-[55%] font-bold p-10  mt-[30px] text-white leading-tight text-center lg:text-start">
           Find amazing things to do anytime, anywhere in Lagos.
         </h1>
 
-        <div className="bg-[#FBFCFF] w-[650px] h-[130px] px-10 py-8 ms-10 rounded-xl">
+        <div className="bg-[#FBFCFF] w-full h-auto lg:w-[750px] lg:h-[150px] px-10 py-8 lg:ms-10 rounded-xl">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">
             <div>
               <Autocomplete

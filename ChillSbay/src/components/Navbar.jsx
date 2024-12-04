@@ -38,7 +38,7 @@ function MyNavbar() {
         <Navbar
           isMenuOpen={isMenuOpen}
           onMenuOpenChange={setIsMenuOpen}
-          className="w-full"
+          maxWidth="2xl"
         >
           <NavbarContent className="sm:hidden" justify="start">
             <NavbarMenuToggle
@@ -127,26 +127,22 @@ function MyNavbar() {
 
           {/* MOBILE RESPONSIVE  */}
           <div className="lg:hidden">
+            <NavbarContent className="w-full" justify="end">
+              <NavbarItem className="hidden lg:flex"> </NavbarItem>
 
-          <NavbarContent className="w-full" justify="end">
-            <NavbarItem className="hidden lg:flex"> </NavbarItem>
+              <NavbarItem>
+                <img src="../Shopping.png" alt="" />
+              </NavbarItem>
+            </NavbarContent>
 
-            <NavbarItem>
-              <img src="../Shopping.png" alt="" />
-            </NavbarItem>
-          </NavbarContent>
-
-          <NavbarMenu className="bg-[#F5FAFF]">
-
-            {MenuItems.map((item, index) => (
-              <NavbarMenuItem key={index}>
-                <Link className="w-full text-black capitalize ">{item}</Link>
-              </NavbarMenuItem>
-            ))}
-          </NavbarMenu>
-          
+            <NavbarMenu className="bg-[#F5FAFF]">
+              {MenuItems.map((item, index) => (
+                <NavbarMenuItem key={index}>
+                  <Link className="w-full text-black capitalize ">{item}</Link>
+                </NavbarMenuItem>
+              ))}
+            </NavbarMenu>
           </div>
-
         </Navbar>
       </section>
     </>
