@@ -6,6 +6,7 @@ import HeroArea from './components/HeroArea'
 import ImgSection from './components/ImgSection'
 import MyNavbar from './components/Navbar'
 import ThingsToDo from './components/ThingsToDo'
+import Footer from './components/Footer'
 
 function App() {
    return (
@@ -17,6 +18,7 @@ function App() {
       <Chillsbay/>
       <Carousel/>
       <GALARY/>
+      <Footer/>
       
     </>
   )
